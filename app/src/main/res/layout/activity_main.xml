@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="">
+
+    <LinearLayout
+        android:id="@+id/profileId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left">
+
+        <ImageView
+            android:id="@+id/vc_imagen"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:maxWidth="64dp"
+            android:radius="20dp"
+            android:src="@drawable/avatar"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:id="@+id/vc_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/viewImageId"
+            android:textSize="28sp"
+            tools:text="Luis Mario"
+            android:text="Luis Mario"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pedidoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileId"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Mis pedidos"
+        android:textSize="28sp"
+        tools:text="Mis pedidos"
+        android:textColor="@color/black"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pedidoId">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            app:layoutManager="LinearLayoutManager"
+            android:scrollbars="vertical">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>
+
+</RelativeLayout>

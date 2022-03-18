@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vc_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:src="@drawable/listview_" />
+
+            <TextView
+                android:id="@+id/vc_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ejemplo de texto"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="24dp"
+                android:layout_below="@+id/vc_imagen"/>
+
+            <TextView
+                android:id="@+id/vc_contenido"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vc_titulo"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:ellipsize="end"
+                android:maxLines="3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vc_contenido"
+                android:layout_marginTop="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentEnd="true"
+                android:text="Ver más"
+                android:backgroundTint="@color/blue_g"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

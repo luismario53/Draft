@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Draft</string>
+    <string name="login_btn">Iniciar sesión</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
+</resources>
